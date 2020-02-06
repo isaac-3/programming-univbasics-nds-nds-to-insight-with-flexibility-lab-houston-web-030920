@@ -80,6 +80,7 @@ def movies_with_directors_set(source)
   while a_index < source.length do
     d_movies << movies_with_director_key(source[a_index][:name], source[a_index][:movies])
     a_index += 1
+    binding.pry
   end
   return d_movies
   # d_movies = []
