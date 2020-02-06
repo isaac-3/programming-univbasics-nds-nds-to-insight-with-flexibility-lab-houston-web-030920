@@ -65,7 +65,7 @@ def gross_per_studio(collection)
   s_index = 0
   while s_index < collection.length do
     s_name = collection[s_index][:studio]
-    if result[s_name]
+    if [s_name] == s_name
       result[s_name] += collection[s_index][:studio]
       binding.pry
     else result[s_name] = collection[s_index][:studio]
