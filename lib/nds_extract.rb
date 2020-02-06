@@ -90,6 +90,7 @@ def movies_with_directors_set(source)
     d_movies << movies_with_director_key(d_name, m_movie)
     a_index += 1
     end
+    binding.pry
   return d_movies
 end
     
