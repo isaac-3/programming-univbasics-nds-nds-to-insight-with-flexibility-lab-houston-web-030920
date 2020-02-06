@@ -70,9 +70,9 @@ def gross_per_studio(collection)
       result[s_name] += s_total
     else result[s_name] = s_total
   end
-  binding.pry
   s_index += 1
   end
+  binding.pry
   return result
 end
 
