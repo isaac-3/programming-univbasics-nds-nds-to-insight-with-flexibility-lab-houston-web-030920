@@ -64,7 +64,11 @@ def gross_per_studio(collection)
   result = {}
   s_index = 0
   while s_index < collection.length do
-    s   
+    if result[s_name]
+      result[s_name] += collection[s_index][:studio]
+    else result[s_index] = collection[s_index][studio]
+  end
+  return result
 end
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
