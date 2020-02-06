@@ -75,13 +75,6 @@ end
   # total of all the worldwide_gross numbers for every movie in the input Hash
 
 def movies_with_directors_set(source)
-  # d_movies = []
-  # a_index = 0
-  # while a_index < source.length do
-  #   d_movies << movies_with_director_key(source[a_index][:name], source[a_index][:movies])
-  #   a_index += 1
-  # end
-  # return d_movies
   d_movies = []
   a_index = 0
   while a_index < source.length do
