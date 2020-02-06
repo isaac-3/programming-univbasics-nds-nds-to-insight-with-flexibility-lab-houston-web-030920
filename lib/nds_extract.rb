@@ -78,8 +78,12 @@ def movies_with_directors_set(source)
   d_movies = []
   a_index = 0
   while a_index < source.length do
-      d_movies << movies_with_director_key(source[a_index][:name], movies_with_director_key(source[a_index][:movies]))
-      a_index += 1
+    directorname = source[d_index][:name]
+    mmovie = source[d_index][:mmovie]
+    d_movies << movies_with_director_key(directorname, mmovie)
+    a_index += 1
+      # d_movies << movies_with_director_key(source[a_index][:name], movies_with_director_key(source[a_index][:movies]))
+      # a_index += 1
     end
   return d_movies
 end
