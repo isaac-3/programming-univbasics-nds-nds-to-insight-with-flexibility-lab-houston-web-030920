@@ -35,14 +35,6 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
-  # movies = []
-  # index = 0
-  # while index < movies_collection.length do
-  #   movie = movies_collection[index]
-  #   movies << movie_with_director_name(name, movie)
-  #   index += 1
-  # end
-  # return movies
   collection = []
   d_index = 0
   while d_index < movies_collection.length do
@@ -86,12 +78,10 @@ def movies_with_directors_set(source)
   d_movies = []
   a_index = 0
   while a_index < source.length do
-    d_irectorname = source[a_index][:name]
+    d_name = source[a_index][:name]
     m_movie = source[a_index][:movies]
-    d_movies << movies_with_director_key(d_irectorname, m_movie)
+    d_movies << movies_with_director_key(d_name, m_movie)
     a_index += 1
-      # d_movies << movies_with_director_key(source[a_index][:name], movies_with_director_key(source[a_index][:movies]))
-      # a_index += 1
     end
   return d_movies
 end
