@@ -72,7 +72,6 @@ def gross_per_studio(collection)
   end
   s_index += 1
   end
-  binding.pry
   return result
 end
 
