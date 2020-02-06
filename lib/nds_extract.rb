@@ -35,14 +35,14 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
-  movies = []
-  index = 0
-  while index < movies_collection.length do
-    movie = movies_collection[index]
-    movies << movie_with_director_name(name, movie)
-    index += 1
-  end
-  return movies
+  # movies = []
+  # index = 0
+  # while index < movies_collection.length do
+  #   movie = movies_collection[index]
+  #   movies << movie_with_director_name(name, movie)
+  #   index += 1
+  # end
+  # return movies
   # collection = []
   # d_index = 0
   # while d_index < movies_collection.length do
