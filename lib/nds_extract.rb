@@ -67,10 +67,9 @@ def gross_per_studio(collection)
     s_name = collection[s_index][:studio]
     s_total = collection[s_index][:worldwide_gross]
     binding.pry
-    if s_name == s_name
-      s_total += collection[s_index][:studio][:worldwide_gross].sum
-      binding.pry
-    else result[s_name] = collection[s_index][:studio]
+    if result[s_name]
+      result[s_name] += s_total
+    else result[s_name] = s_total
   end
   s_index += 1
   end
